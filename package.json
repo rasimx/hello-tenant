@@ -1,0 +1,13 @@
+{
+  "name": "monorepo-init",
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "TZ=UTC yarn workspaces foreach -piv run dev"
+  },
+  "packageManager": "yarn@3.5.0"
+}
