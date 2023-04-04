@@ -1,0 +1,10 @@
+.header {
+  height: 60px;
+  padding: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-bottom: 1px solid gray;
+  &.active {
+    background: rgba(0,128,0,.1)
+  }
+}

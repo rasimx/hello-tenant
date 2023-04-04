@@ -1,0 +1,26 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Tenant {
+  id: String!
+  name: String!
+  users: [User!]
+}
+
+type User {
+  id: String!
+  tenants: [Tenant!]
+  email: String!
+}
+
+type Article {
+  id: String!
+  tenant: Tenant
+  text: String!
+}
+
+type Query {
+  tenants: [Tenant!]!
+  articles: [Article!]!
+}
